@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <title>Heehoposting</title>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const quotes = [
+          "Heehoposting, now served medium rare!",
+          "Tapped out...",
+          "I just lost the game.",
+          "Programmed in Arch, btw.",
+          "xdddddddddddd",
+          "A player may concede the game at any time.",
+          `Say "No!" to NFTs!`,
+          "One more god rejected!",
+          "American made, built Ford tough.",
+          "They don't make 'em like they used to...",
+          "The only doctor I trust is Dr Pepper.",
+          "I learned JavaScript and all I got was this stupid website...",
+          "Around the world.",
+          "👀",
+          "Now +2 on block!",
+          "Never forget DP RC. 😔",
+          "Some girls are bigger than others...",
+          "FUBAR",
+          "Now featuring Dante from Devil May Cry!",
+          "All it costs is your love!",
+          "Sacrifice an artifact: Heehoposting gets +2/+2 until end of turn.",
+          "Alrighty then, chatroom.",
+          "These boots have seen everything.",
+          "What a horrible night to have a curse.",
+          "Selling petrol!",
+          "Bolt the bird!",
+          "Ah crap baskets.",
+          "Hi, Mom!",
+          "I can see my house from here!",
+          "English or Spanish?",
+          "graphic design is my passion",
+        ];
+
+        const splashText = document.getElementById("splash-text");
+        splashText.textContent =
+          quotes[Math.floor(Math.random() * quotes.length)];
+      });
+    </script>
+    <div class="page">
+      <header class="header">
+        <div class="header-img"></div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/index.html">Blog</a></li>
+            <li><a href="/projects.html">Projects</a></li>
+            <li><a href="/what-i-use.html">What I Use</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="content">
+        <article>
+          <h1>Welcome, Devil Summoner...</h1>
+          <div class="title-container"><span id="splash-text"></span></div>
+          <figure>
+            <img
+              src="/images/sadge-frost.gif"
+              alt="Jack Frost from SMT knocks over snowman and is sad."
+            />
+            <figcaption>
+              <sub> MFW you don't like open source software. </sub>
+            </figcaption>
+          </figure>
+          <p>
+            Welcome to my personal website and blog! This website serves as a
+            space for my projects and interests—essentially, my own little
+            corner of the web!
+          </p>
+          <p>
+            Please be sure to be mindful of any clutter; this website, much like
+            me, is always evolving.
+          </p>
+          <small
+            >est. 2021, last updated on
+            <time datetime="2024-8-31T15:00-04:00">August 31, 2024</time></small
+          >
+        </article>
+      </main>
+
+      <footer>
+        <img src="/images/jackfrostsmall.webp" />
+        <a href="https://heehoposting.xyz">https://heehoposting.xyz</a>
+        <img src="/images/jackfrostsmall.webp" style="transform: scaleX(-1)" />
+      </footer>
+      <div class="button-container">
+        <img src="/images/drpepper.gif" class="button" />
+        <img src="/images/linux_powered.gif" class="button" />
+        <img src="/images/this-machine-kills-fascists.png" class="button" />
+        <img src="/images/virtual-diva.png" class="button" />
+        <img src="/images/besteyes.gif" class="button" />
+        <img src="/images/3ds.png" class="button" />
+      </div>
+    </div>
+  </body>
+</html>
