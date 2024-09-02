@@ -2,7 +2,7 @@
 
 Howdy! It's been a little bit since my first draft of Heehoposting went live in late 2021, and after a brief phase of overcomplicated design, I've finally realized that basic HTML, CSS, and JS is _probably_ enough for something like this. I can't wait to be proven wrong. ;)
 
-Anyway, welcome to Heehoposting 2.0!
+Anyway, welcome to (https://heehoposting.xyz)[Heehoposting 2.0]!
 
 ## New stuff:
 
