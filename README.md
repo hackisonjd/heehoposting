@@ -14,3 +14,7 @@ Anyway, welcome to [Heehoposting 2.0](https://heehoposting.xyz)!
 ## License:
 
 Man, I dunno. Do whatever you want, just don't pretend that its me doing it. I'm just yapping about myself on this website so I have zero idea why I'd need to elaborate on this.
+
+## Plans:
+
+Current plan is for me to use this website as my own little personal spot on the web, but the domain itself is going to get a ton of use. :)
