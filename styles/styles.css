@@ -34,7 +34,7 @@ body {
   width: 100%;
   background-color: #000;
   height: 5rem;
-  background-image: url("/images/background.jpg");
+  background-image: url("static/images/background.jpg");
 }
 
 article {
