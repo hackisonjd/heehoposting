@@ -3,7 +3,7 @@ title: "Hello! My name is Jackson (he/him)"
 layout: single
 ---
 
-![Mirror selfie](/images/mirror-selfie.jpg)
+![](/images/mirror-selfie.jpg)
 
 I am a 23-year-old Computer Science major at James Madison University and a software developer who loves programming, gaming, and all things tech. I live in the beautiful state of Virginia with my parents and my lovely (and slightly overweight) cat, Tippy.
 
@@ -23,14 +23,14 @@ I also code a lot in my free time. If you want to see what I'm working on, visit
 
 My first handheld was a Nintendo DS that I got for my eighth birthday, and I've been into video games ever since. Here are some of my favorites:
 
-- Obviously, the Shin Megami Tensei franchise (SMT IV is the best game in the series, by the way)
+- Obviously, the Shin Megami Tensei franchise
 - Granblue Fantasy Versus Rising
 - Baldur's Gate 3
 - Star Wars Jedi: Fallen Order
 - Sid Meier's Civilization V
 - Rollercoaster Tycoon 2
 
-Lately, my main focus has been fighting games, especially after my trip to Frosty Faustings in January 2024. I'm currently playing Granblue Fantasy Versus Rising (Belial main, by the way), but I'm eagerly waiting for 2XKO (please, Riot, put Gnar in the game, and my soul is yours).
+Lately, my main focus has been fighting games, especially after my trip to Frosty Faustings in January 2024. I'm currently playing Granblue Fantasy Versus Rising, but I'm eagerly waiting for 2XKO.
 
 ### Art
 

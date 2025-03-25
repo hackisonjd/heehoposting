@@ -2,8 +2,7 @@
 title: "So... what do I actually do?"
 ---
 
-![](/images/lainroom_animated_002_unscaled.gif)
-<figcaption>Art: <a href="https://pixeljoint.com/p/193954.htm" target="_blank">Nettleflap</a></figcaption>
+![Art: [Nettleflap](https://pixeljoint.com/p/193954.htm)](/images/lainroom_animated_002_unscaled.gif)
 
 ## Working on...
 
