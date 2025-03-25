@@ -1,5 +1,19 @@
-Dockerfile
-Jackson-Darman-Resume.pdf
-blog/beach-episode-reflection.html
-fonts/
-*:Zone.Identifier
+# Hugo default output directory
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# Hugo cache directories
+./hugo_build.lock
+
+# Temporary files
+*.log
+.DS_Store
+Thumbs.db
+
+# Generated files by hugo
+/public/
+/resources/_gen/
+.hugo_build.lock
+

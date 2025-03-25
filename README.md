@@ -6,7 +6,7 @@ Anyway, welcome to [Heehoposting 2.0](https://heehoposting.xyz)!
 
 ## New stuff:
 
-- Written entirely in HTML, CSS, and JS so that its simple and loads fast.
+- Uses Hugo as a static site generator, so that its simple and loads fast.
 - Updated layout, retaining the original feel of the site while also being simpler.
 - Blog section, which will hopefully have new stuff in it soon!
 - and basically common sense stuff that the site should have had to begin with! Oops!

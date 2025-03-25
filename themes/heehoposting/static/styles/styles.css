@@ -15,8 +15,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   margin: 0;
   padding: 0;
 }
@@ -29,11 +29,11 @@ body {
   letter-spacing: -0.04em;
   background-color: var(--background);
   color: var(--foreground);
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizelegibility;
   font-feature-settings: "liga", "tnum", "zero", "ss01", "locl";
   font-variant-ligatures: contextual;
   -webkit-overflow-scrolling: touch;
-  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -78,12 +78,44 @@ table {
   margin: calc(var(--line-height) * 1.01) 0;
 }
 
+/* Base link styles */
 a {
   color: var(--accent);
 }
 
-a:hover,
-button:hover {
+/* Specific link styles - these need to come before general a:hover */
+footer a {
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+nav li a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+figure figcaption a {
+  color: var(--foreground);
+}
+
+/* Hover states - general first, then specifics */
+a:hover {
+  background-color: color-mix(in srgb, var(--accent) 15%, transparent);
+}
+
+footer a:hover {
+  background-color: color-mix(in srgb, var(--accent) 15%, transparent);
+}
+
+nav li a:hover {
+  background-color: color-mix(in srgb, var(--accent) 15%, transparent);
+}
+
+figure figcaption a:hover {
+  background-color: color-mix(in srgb, var(--foreground) 15%, transparent);
+}
+
+.selected {
   background-color: color-mix(in srgb, var(--accent) 15%, transparent);
 }
 
@@ -102,6 +134,10 @@ button {
   appearance: none;
   cursor: pointer;
   outline: none;
+}
+
+button:hover {
+  background-color: color-mix(in srgb, var(--accent) 15%, transparent);
 }
 
 img {
@@ -160,7 +196,7 @@ strong {
   width: 100%;
   background-color: var(--background);
   height: 5rem;
-  background-image: url("../static/images/background.jpg");
+  background-image: url("/images/background.jpg");
 }
 
 .header {
@@ -190,14 +226,6 @@ figure figcaption {
   border-radius: 0 0 var(--radius) var(--radius);
 }
 
-figure figcaption a {
-  color: var(--foreground);
-}
-
-figure figcaption a:hover {
-  background-color: color-mix(in srgb, var(--foreground) 15%, transparent);
-}
-
 nav {
   height: 2rem;
   background-color: var(--background-secondary);
@@ -216,11 +244,6 @@ nav li {
   padding-top: 0.25rem;
 }
 
-nav li a {
-  font-weight: bold;
-  text-decoration: none;
-}
-
 main {
   background-color: var(--background-secondary);
   border: 1px solid var(--foreground);
@@ -236,11 +259,6 @@ footer {
   border: 1px solid var(--foreground);
   text-align: center;
   margin-top: 1rem;
-}
-
-footer a {
-  margin: 0 1rem;
-  text-decoration: none;
 }
 
 .blog-title {
@@ -272,20 +290,20 @@ footer a {
 }
 
 #splash-text {
-  animation: Pulse 0.75s infinite alternate;
+  animation: pulse 0.75s infinite alternate;
   color: yellow;
   font-family: monospace;
   font-style: italic;
 }
 
-@media only screen and (min-width: 721px) {
+@media (width >= 721px) {
   .page {
     width: 720px;
     margin: 0 auto;
   }
 }
 
-@keyframes Pulse {
+@keyframes pulse {
   from {
     font-size: 1rem;
   }
