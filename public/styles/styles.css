@@ -29,7 +29,7 @@ body {
   letter-spacing: -0.04em;
   background-color: var(--background);
   color: var(--foreground);
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizelegibility;
   font-feature-settings: "liga", "tnum", "zero", "ss01", "locl";
   font-variant-ligatures: contextual;
   -webkit-overflow-scrolling: touch;
@@ -78,12 +78,41 @@ table {
   margin: calc(var(--line-height) * 1.01) 0;
 }
 
+/* Base link styles */
 a {
   color: var(--accent);
 }
 
+/* Specific link styles - these need to come before general a:hover */
+nav li a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a {
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+figure figcaption a {
+  color: var(--foreground);
+}
+
+/* Hover states - general first, then specifics */
 a:hover {
   background-color: color-mix(in srgb, var(--accent) 15%, transparent);
+}
+
+nav li a:hover {
+  background-color: color-mix(in srgb, var(--accent) 15%, transparent);
+}
+
+footer a:hover {
+  background-color: color-mix(in srgb, var(--accent) 15%, transparent);
+}
+
+figure figcaption a:hover {
+  background-color: color-mix(in srgb, var(--foreground) 15%, transparent);
 }
 
 .selected {
@@ -197,14 +226,6 @@ figure figcaption {
   border-radius: 0 0 var(--radius) var(--radius);
 }
 
-figure figcaption a {
-  color: var(--foreground);
-}
-
-figure figcaption a:hover {
-  background-color: color-mix(in srgb, var(--foreground) 15%, transparent);
-}
-
 nav {
   height: 2rem;
   background-color: var(--background-secondary);
@@ -223,15 +244,6 @@ nav li {
   padding-top: 0.25rem;
 }
 
-nav li a {
-  font-weight: bold;
-  text-decoration: none;
-}
-
-nav li a:hover {
-  background-color: color-mix(in srgb, var(--accent) 15%, transparent);
-}
-
 main {
   background-color: var(--background-secondary);
   border: 1px solid var(--foreground);
@@ -247,15 +259,6 @@ footer {
   border: 1px solid var(--foreground);
   text-align: center;
   margin-top: 1rem;
-}
-
-footer a {
-  margin: 0 1rem;
-  text-decoration: none;
-}
-
-footer a:hover {
-  background-color: color-mix(in srgb, var(--accent) 15%, transparent);
 }
 
 .blog-title {
@@ -293,7 +296,7 @@ footer a:hover {
   font-style: italic;
 }
 
-@media only screen and (min-width: 721px) {
+@media (min-width: 721px) {
   .page {
     width: 720px;
     margin: 0 auto;
