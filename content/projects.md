@@ -4,7 +4,7 @@ title: "My Projects"
 
 ![Art: [Nettleflap](https://pixeljoint.com/p/193954.htm)](/images/lainroom_animated_002_unscaled.gif)
 
-## Working on...
+## Working on
 
 - [Heehoposting](https://heehoposting.xyz), the site that you're on right now!
   - I like to call this version the 2.0 update of Heehoposting, since I have more of a vision of what I want the website to be.
@@ -18,7 +18,7 @@ title: "My Projects"
 
 In general, I like to work on projects that solve problems that mildly irritate me, so this list of projects will undoubtedly grow larger as more things grind my gears. 😉
 
-## Learning about...
+## Learning about
 
 - Practical study of algorithms and their use in problem solving.
   - Divide-and-conquer
