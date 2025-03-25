@@ -84,6 +84,11 @@ a {
 }
 
 /* Specific link styles - these need to come before general a:hover */
+footer a {
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
 nav li a {
   font-weight: bold;
   text-decoration: none;
@@ -93,26 +98,21 @@ figure figcaption a {
   color: var(--foreground);
 }
 
-footer a {
-  margin: 0 1rem;
-  text-decoration: none;
-}
-
 /* Hover states - general first, then specifics */
 a:hover {
   background-color: color-mix(in srgb, var(--accent) 15%, transparent);
 }
 
-figure figcaption a:hover {
-  background-color: color-mix(in srgb, var(--foreground) 15%, transparent);
+footer a:hover {
+  background-color: color-mix(in srgb, var(--accent) 15%, transparent);
 }
 
 nav li a:hover {
   background-color: color-mix(in srgb, var(--accent) 15%, transparent);
 }
 
-footer a:hover {
-  background-color: color-mix(in srgb, var(--accent) 15%, transparent);
+figure figcaption a:hover {
+  background-color: color-mix(in srgb, var(--foreground) 15%, transparent);
 }
 
 .selected {
@@ -296,7 +296,7 @@ footer {
   font-style: italic;
 }
 
-@media (min-width = 721px) {
+@media (min-width: 721px) {
   .page {
     width: 720px;
     margin: 0 auto;
