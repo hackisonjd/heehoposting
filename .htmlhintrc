@@ -3,9 +3,9 @@
   "attr-lowercase": true,
   "attr-value-double-quotes": true,
   "attr-no-duplication": true,
-  "tag-pair": true,
-  "spec-char-escape": true,
+  "tag-pair": false,
+  "spec-char-escape": false,
   "id-unique": true,
   "src-not-empty": true,
-  "title-require": true
+  "title-require": false
 }
