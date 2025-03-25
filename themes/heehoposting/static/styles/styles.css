@@ -296,7 +296,7 @@ footer {
   font-style: italic;
 }
 
-@media (min-width: 721px) {
+@media (width >= 721px) {
   .page {
     width: 720px;
     margin: 0 auto;
