@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome, Devil Summoner... on Heehoposting</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Welcome, Devil Summoner... on Heehoposting</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Mar 2025 12:00:00 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Blog Post</title>
+      <link>http://localhost:1313/blog/my-first-post/</link>
+      <pubDate>Tue, 25 Mar 2025 12:00:00 -0400</pubDate>
+      <guid>http://localhost:1313/blog/my-first-post/</guid>
+      <description>&lt;p&gt;This is my first blog post content in Hugo.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hello! My name is Jackson (he/him)</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/mirror-selfie.jpg&#34; alt=&#34;Mirror selfie&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I am a 23-year-old Computer Science major at James Madison University and a software developer who loves programming, gaming, and all things tech. I live in the beautiful state of Virginia with my parents and my lovely (and slightly overweight) cat, Tippy.&lt;/p&gt;&#xA;&lt;h2 id=&#34;interests&#34;&gt;Interests&lt;/h2&gt;&#xA;&lt;p&gt;You&amp;rsquo;ll find references to these all over this website.&lt;/p&gt;&#xA;&lt;h3 id=&#34;computers&#34;&gt;Computers&lt;/h3&gt;&#xA;&lt;p&gt;It&amp;rsquo;d be strange for me to be a software developer and not like computers, right? Computers have been a part of my life ever since I was a kid (my first computer was a 2002 Apple eMac), and everything I&amp;rsquo;m interested in stems from that early exposure to technology.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My Tools of the Trade</title>
+      <link>http://localhost:1313/what-i-use/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/what-i-use/</guid>
+      <description>&lt;p&gt;I know no one asked, but I love to talk about technology and what I&amp;rsquo;ve got. This is not meant as a definitive &amp;ldquo;you should get these things&amp;rdquo; list, but I mean&amp;hellip; it couldn&amp;rsquo;t hurt, right? ;)&lt;/p&gt;&#xA;&lt;h2 id=&#34;hardware&#34;&gt;Hardware&lt;/h2&gt;&#xA;&lt;h3 id=&#34;desktop&#34;&gt;Desktop&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;CPU: Ryzen 9 5950x&lt;/li&gt;&#xA;&lt;li&gt;Motherboard: MSI X570S Carbon MAX WiFi&lt;/li&gt;&#xA;&lt;li&gt;RAM: 64GB of G.Skill Trident Z @ 3600 MHz&lt;/li&gt;&#xA;&lt;li&gt;GPU: PowerColor Red Devil RX 6900XT&lt;/li&gt;&#xA;&lt;li&gt;PSU: 1000W EVGA Gold&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This is my daily driver system that&amp;rsquo;s meant for all of my gaming and programming needs. You may notice that these parts are all AMD, where is the Intel and NVIDIA stuff? Well, I deliberately made the choice to avoid NVIDIA because:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>So... what do I actually do?</title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/lainroom_animated_002_unscaled.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;figcaption&gt;Art: &lt;a href=&#34;https://pixeljoint.com/p/193954.htm&#34; target=&#34;_blank&#34;&gt;Nettleflap&lt;/a&gt;&lt;/figcaption&gt;&#xA;&lt;h2 id=&#34;working-on&#34;&gt;Working on&amp;hellip;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://heehoposting.xyz&#34;&gt;Heehoposting&lt;/a&gt;, the site that you&amp;rsquo;re on right now!&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;I like to call this version the 2.0 update of Heehoposting, since I have more of a vision of what I want the website to be.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Discord bots!&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;My most recent project is a Discord bot called &lt;a href=&#34;https://github.com/jacksondarman/lekbot&#34;&gt;LekBot&lt;/a&gt;, which takes in &lt;a href=&#34;https://github.com/jacksondarman/lekscrape&#34;&gt;Civilization data from a Google Doc&lt;/a&gt; and prints it out to a Discord server.&lt;/li&gt;&#xA;&lt;li&gt;I&amp;rsquo;m also working on a personal bot that sends memes and funny images from time to time in my Discord server.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;My homelab!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

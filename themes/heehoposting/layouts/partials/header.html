@@ -1,0 +1,13 @@
+<header class="header">
+    <div class="header-img">
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li {{ if .IsHome }}class="selected"{{ end }}><a href="/">Home</a></li>
+            <li {{ if eq .RelPermalink "/about/" }}class="selected"{{ end }}><a href="/about/">About</a></li>
+            <li {{ if hasPrefix .RelPermalink "/blog/" }}class="selected"{{ end }}><a href="/blog/">Blog</a></li>
+            <li {{ if eq .RelPermalink "/projects/" }}class="selected"{{ end }}><a href="/projects/">Projects</a></li>
+            <li {{ if eq .RelPermalink "/what-i-use/" }}class="selected"{{ end }}><a href="/what-i-use/">What I Use</a></li>
+        </ul>
+    </nav>
+</header>

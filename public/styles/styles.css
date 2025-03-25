@@ -160,7 +160,7 @@ strong {
   width: 100%;
   background-color: var(--background);
   height: 5rem;
-  background-image: url("../static/images/background.jpg");
+  background-image: url("/images/background.jpg");
 }
 
 .header {

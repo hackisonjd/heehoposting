@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="/styles/styles.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico" />
+        <title>{{ if .Title }}{{ .Title }} - {{ end }}Heehoposting</title>
+        {{ block "head" . }}{{ end }}
+    </head>
+    <body>
+        {{ block "script" . }}{{ end }}
+        <div class="page">
+            {{ partial "header.html" . }}
+            <main class="content">
+                <article>
+                    {{ block "main" . }}{{ end }}
+                </article>
+            </main>
+            {{ partial "footer.html" . }}
+        </div>
+    </body>
+</html>

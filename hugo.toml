@@ -1,0 +1,14 @@
+baseURL = 'https://heehoposting.xyz/'
+languageCode = 'en-us'
+title = 'Heehoposting'
+theme = 'heehoposting'
+
+[permalinks]
+  posts = '/:year/:month/:title/'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+ignoreLogs = ['warning-goldmark-raw-html']
