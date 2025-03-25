@@ -1,5 +1,5 @@
 ---
-title: "My Tools of the Trade"
+title: "My Tools"
 ---
 
 I know no one asked, but I love to talk about technology and what I've got. This is not meant as a definitive "you should get these things" list, but I mean... it couldn't hurt, right? ;)

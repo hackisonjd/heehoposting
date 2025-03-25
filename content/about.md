@@ -1,5 +1,5 @@
 ---
-title: "Hello! My name is Jackson (he/him)"
+title: "About Me"
 layout: single
 ---
 
