@@ -89,18 +89,22 @@ nav li a {
   text-decoration: none;
 }
 
+figure figcaption a {
+  color: var(--foreground);
+}
+
 footer a {
   margin: 0 1rem;
   text-decoration: none;
 }
 
-figure figcaption a {
-  color: var(--foreground);
-}
-
 /* Hover states - general first, then specifics */
 a:hover {
   background-color: color-mix(in srgb, var(--accent) 15%, transparent);
+}
+
+figure figcaption a:hover {
+  background-color: color-mix(in srgb, var(--foreground) 15%, transparent);
 }
 
 nav li a:hover {
@@ -109,10 +113,6 @@ nav li a:hover {
 
 footer a:hover {
   background-color: color-mix(in srgb, var(--accent) 15%, transparent);
-}
-
-figure figcaption a:hover {
-  background-color: color-mix(in srgb, var(--foreground) 15%, transparent);
 }
 
 .selected {
@@ -296,7 +296,7 @@ footer {
   font-style: italic;
 }
 
-@media (min-width: 721px) {
+@media (min-width = 721px) {
   .page {
     width: 720px;
     margin: 0 auto;
