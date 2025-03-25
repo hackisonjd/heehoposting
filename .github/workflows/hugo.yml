@@ -40,13 +40,13 @@ jobs:
                 npm install -g htmlhint
 
             - name: Lint Markdown files
-              run: markdownlint 'content/**/*.md' || true
+              run: markdownlint 'content/**/*.md'
 
             - name: Lint CSS files
-              run: stylelint 'static/styles/**/*.css' || true
+              run: stylelint 'static/styles/**/*.css'
 
             - name: Lint HTML files
-              run: htmlhint 'themes/heehoposting/layouts/**/*.html' || true
+              run: htmlhint 'themes/heehoposting/layouts/**/*.html'
 
     build:
         runs-on: ubuntu-latest
