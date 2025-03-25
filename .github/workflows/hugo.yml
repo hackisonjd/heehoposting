@@ -43,7 +43,7 @@ jobs:
               run: markdownlint 'content/**/*.md'
 
             - name: Lint CSS files
-              run: stylelint 'static/styles/**/*.css'
+              run: stylelint 'themes/heehoposting/static/styles/**/*.css'
 
             - name: Lint HTML files
               run: htmlhint 'themes/heehoposting/layouts/**/*.html'
