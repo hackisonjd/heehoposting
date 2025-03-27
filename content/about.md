@@ -3,7 +3,7 @@ title: "About Me"
 layout: single
 ---
 
-![Hello! My name is Jackson (he/him)](/images/mirror-selfie.jpg)
+![Hello! My name is Jackson (he/they)](/images/mirror-selfie.jpg)
 
 I am a 23-year-old Computer Science major at James Madison University and a software developer who loves programming, gaming, and all things tech. I live in the beautiful state of Virginia with my parents and my lovely (and slightly overweight) cat, Tippy.
 
