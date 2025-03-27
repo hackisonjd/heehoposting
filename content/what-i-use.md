@@ -23,7 +23,7 @@ And I avoided Intel mainly because AMD was just cheaper at the time I was buildi
 
 I run Windows 10 Enterprise LTSC out of necessity and because I have an ISO with a license, but my daily driver operating system is Fedora Linux, which has been serving me well. Windows is only present to handle situations that Fedora can't (games with invasive anti-cheat and proprietary drivers). When Windows 10 LTSC goes EOL, I am probably jumping ship to Linux full time (finally).
 
-### Laptop
+### Laptop(s)
 
 - Model: Framework 16
 - CPU: AMD Ryzen 7 7840HS
@@ -35,3 +35,5 @@ Aah, the Framework 16. Probably the best laptop I have ever used (and will hopef
 I only run Windows 10 Enterprise LTSC on this laptop, however, because I only have one 2TB drive in it at the moment. If I buy another one, I'll do the same dual boot setup that I've done with my main desktop.
 
 This laptop has been my main workhorse when I'm out travelling or just don't want to leave my bed that day. I have no complaints really, it does everything I want and more.
+
+Recently, I've also purchased an M4 MacBook Pro to experiment and write software for MacOS. This is a long story, that definitely deserves a blog post (which may or may not be coming soon 👀).
