@@ -2,9 +2,20 @@ baseURL = 'https://heehoposting.xyz/'
 languageCode = 'en-us'
 title = 'Heehoposting'
 theme = 'heehoposting'
+pagination.pagerSize = 5
 
 [permalinks]
   posts = '/:year/:month/:title/'
+
+[markup.highlight]
+  noClasses = false
+
+[params]
+  contentTypeName = "blog"
+
+  readingTime = true
+
+  dateFormat = "2006 January 02"
 
 [markup]
   [markup.goldmark]

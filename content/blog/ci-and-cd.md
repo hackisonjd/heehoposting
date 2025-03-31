@@ -2,6 +2,7 @@
 title: A Beginner's Guide to CI and CD
 date: 2025-03-31
 author: hackisonjd
+summary: This beginner's guide introduces Continous Integration and Deployment (CI/CD), and explains how these automated workflows can streamline software development.
 tags:
   - uug-talks
 ---

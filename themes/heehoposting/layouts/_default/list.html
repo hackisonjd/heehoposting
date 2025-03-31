@@ -1,15 +1,27 @@
 {{ define "main" }}
-    <h1>{{ .Title }}</h1>
-    {{ .Content }}
+    {{ with .Content }}
+        <div class="index-content">
+            {{ . }}
+        </div>
+    {{ end}}
 
     {{ if eq .RelPermalink "/blog/" }}
     <ul class="post-list"></ul>
-        {{ range .Pages }}
+        {{ range .Paginator.Pages }}
         <li>
             <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             <span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+            {{ if .Params.tags }}
+                <span class="post-tags">
+                    {{ range .Params.tags }}
+                        #<a href="{{ (urlize (printf "tags/%s/" .)) | absLangURL }}">{{- . -}}</a>&nbsp;
+                    {{ end }}
+                </span>
+            {{ end }}
         </li>
         {{ end }}
     </ul>
     {{ end}}
+
+    {{ partial "pagination.html" .}}
 {{ end }}
