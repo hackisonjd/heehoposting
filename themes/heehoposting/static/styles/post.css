@@ -132,10 +132,3 @@
   .footnotes hr {
     background: color-mix(in srgb, var(--foreground) 50%, transparent);
   }
-  
-  @media (max-width: 684px) {
-    .post-cover {
-      padding: 10px;
-      border-width: 10px;
-    }
-  }
