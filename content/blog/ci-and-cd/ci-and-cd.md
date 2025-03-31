@@ -1,12 +1,14 @@
 ---
 title: A Beginner's Guide to CI and CD
-date: 2025-03-07
-draft: true
+date: 2025-04-02
 author: hackisonjd
 tags:
   - uug-talks
 ---
-# What is CI/CD?
+
+*Disclaimer: This blog post was written as supplemental material for the James Madison University's Unix Users Group. Just pretend you were there!*
+
+## What is CI/CD?
 
 **Continuous Integration (CI)**: Automate the process of merging new code into a shared repository, early and often.
 - Each commit triggers an automated workflow on a server that runs a series of tasks to ensure new code doesn't break the codebase.
@@ -18,7 +20,7 @@ tags:
 - The more complex and stateful the system is, the harder it is to make it truly rely on CD.
 
 Most developer platforms have their own CI/CD solutions (GitHub Actions), but many people also self-host these solutions themselves (a topic for another time).
-# The Theory
+## The Theory
 
 The idea is to automate the testing and delivery of software from the initial code commit all the way through to deployment.
 ### Why do this?
@@ -28,7 +30,7 @@ The idea is to automate the testing and delivery of software from the initial co
 - For large corporations, time is money!
 
 **Is it worth it?** It depends!
-# The Agenda
+## The Agenda
 
 You will be setting up a sample GitHub repository, and setting up a GitHub Actions configuration file to ensure that code will be checked and, if it passes the tests, deploy a new build automatically.
 
@@ -63,16 +65,16 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-# Getting Started
+## Getting Started
 
 *Note:* In order to follow along, you must install Git and have an active GitHub account.
-## Fork my sample repository
+### Fork my sample repository
 
 For demonstration purposes, I have created a sample repository that contains a simple Python "Hello World" file.
 1. Navigate to https://github.com/hackisonjd/gh-actions-example
 2. In the top-right corner of the page, click **Fork**. Leave everything as default.
 3. Click **Create fork**.
-## Download the repository to your local device
+### Download the repository to your local device
 
 1. On GitHub, navigate to **your fork** of the sample repository.
 2. Above the list of files, click the green **Code** button
@@ -87,7 +89,7 @@ git clone <PASTE YOUR LINK HERE>
 ```
 
 After you've completed these steps, you should have the repository in the location you specified. 
-## Create your first workflow
+### Create your first workflow
 
 ```bash 
 cd gh-actions-example
@@ -101,7 +103,7 @@ These commands do the following:
 	- This directory is where GitHub looks for your workflow files.
 - Create a new file named `static.yml`
 	- This is your workflow file. It can be named anything you want, but make sure to leave the `.yml` extension!
-## Open your workflow in a text editor
+### Open your workflow in a text editor
 
 Let's say, for instance, we want our groundbreaking, revolutionary "Hello World" app to conform to standard PEP 8 formatting. How would we accomplish this?
 
@@ -142,7 +144,7 @@ jobs:
 
 ```
 
-## Time out! What's going on here?
+### Time out! What's going on here?
 
 This seems like a lot. What is this specifically doing?
 
@@ -160,3 +162,19 @@ Notice that these are things that you would ordinarily do manually (I hope) if y
 By taking the extra five or so minutes to define a workflow first, you've saved yourself (or in an enterprise setting, your team) an insane amount of time in the future, especially as the project gets larger.
 
 This is where CI/CD shines!
+
+### Play around with the workflow
+
+- Change specific arguments in the `.yaml` file. What's changed? How does this affect the testing behavior?
+- Add a bunch of random whitespaces, or add some code that doesn't work. Does the integration fail?
+
+## What's next?
+
+This post is only really scratching the surface on what's possible with CI/CD, so here are some recommendations on
+where to look to improve your knowledge.
+
+- Take a look at some workflows on GitHub!
+  - Here's [my workflow for Heehoposting](https://github.com/hackisonjd/heehoposting/blob/main/.github/workflows/hugo.yml)
+- Evaluate some of the GitHub workflow templates and see if they work in your project.
+
+![Make sure to check the Actions link on the top bar of your repo!](images/gh-actions-screenshot.png)
