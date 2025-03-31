@@ -12,18 +12,22 @@ tags:
 ## What is CI/CD?
 
 **Continuous Integration (CI)**: Automate the process of merging new code into a shared repository, early and often.
+
 - Each commit triggers an automated workflow on a server that runs a series of tasks to ensure new code doesn't break the codebase.
 - A natural evolution of test-driven development.
 
 **Continuous Deployment/Delivery (CD)**: One step further than CI, code that passes all tests is automatically deployed to production, without manual intervention.
+
 - Significantly harder to pull off, typically only used on basic, stateless systems.
-	- Web servers and APIs, which are easy to rollback if something breaks
+ - Web servers and APIs, which are easy to rollback if something breaks
 - The more complex and stateful the system is, the harder it is to make it truly rely on CD.
 
 Most developer platforms have their own CI/CD solutions (GitHub Actions), but many people also self-host these solutions themselves (a topic for another time).
+
 ## The Theory
 
 The idea is to automate the testing and delivery of software from the initial code commit all the way through to deployment.
+
 ### Why do this?
 
 - Limits amount of human intervention required to build a project. (Automate once, be "lazy" forever)
@@ -31,6 +35,7 @@ The idea is to automate the testing and delivery of software from the initial co
 - For large corporations, time is money!
 
 **Is it worth it?** It depends!
+
 ## The Agenda
 
 You will be setting up a sample GitHub repository, and setting up a GitHub Actions configuration file to ensure that code will be checked and, if it passes the tests, deploy a new build automatically.
@@ -69,12 +74,14 @@ jobs:
 ## Getting Started
 
 *Note:* In order to follow along, you must install Git and have an active GitHub account.
+
 ### Fork my sample repository
 
 For demonstration purposes, I have created a sample repository that contains a simple Python "Hello World" file.
 1. Navigate to https://github.com/hackisonjd/gh-actions-example
 2. In the top-right corner of the page, click **Fork**. Leave everything as default.
 3. Click **Create fork**.
+
 ### Download the repository to your local device
 
 1. On GitHub, navigate to **your fork** of the sample repository.
@@ -89,7 +96,8 @@ cd ~/Documents # Or use whatever directory you want!
 git clone <PASTE YOUR LINK HERE>
 ```
 
-After you've completed these steps, you should have the repository in the location you specified. 
+After you've completed these steps, you should have the repository in the location you specified.
+
 ### Create your first workflow
 
 ```bash 
@@ -104,6 +112,7 @@ These commands do the following:
 	- This directory is where GitHub looks for your workflow files.
 - Create a new file named `static.yml`
 	- This is your workflow file. It can be named anything you want, but make sure to leave the `.yml` extension!
+  
 ### Open your workflow in a text editor
 
 Let's say, for instance, we want our groundbreaking, revolutionary "Hello World" app to conform to standard PEP 8 formatting. How would we accomplish this?
