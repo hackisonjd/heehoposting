@@ -89,7 +89,7 @@ For demonstration purposes, I have created a sample repository that contains a s
 1. On GitHub, navigate to **your fork** of the sample repository.
 2. Above the list of files, click the green **Code** button
 3. Copy the URL for the repository.
-    1.  If you have an SSH key associated with your GitHub account already, use the SSH option.
+    1. If you have an SSH key associated with your GitHub account already, use the SSH option.
     2. Otherwise, use the HTTPS option.
 4. Open your terminal, and type the following:
 
@@ -102,7 +102,7 @@ After you've completed these steps, you should have the repository in the locati
 
 ### Create your first workflow
 
-```bash 
+```bash
 cd gh-actions-example
 mkdir .github/workflows && cd .github/workflows
 touch static.yml
@@ -166,9 +166,9 @@ This seems like a lot. What is this specifically doing?
   - First, you're saying that you want this *runner* to use Ubuntu.
   - Second, you're defining your *steps*:
     - Set up Python 3.10.
-        - Install the dependencies we need.
-        - Run the linter.
-        - Run the tests.
+    - Install the dependencies we need.
+    - Run the linter.
+    - Run the tests.
 
 Notice that these are things that you would ordinarily do manually (I hope) if you're deploying or pushing code to a repository.
 
