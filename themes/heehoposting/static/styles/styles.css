@@ -6,7 +6,7 @@
   --foreground: #fffcf2;
   --accent: #F2613F;
   --font-size: 1rem;
-  --line-height: 1.54rem;
+  --line-height: 1.54em;
   --radius: 0px;
 }
 
@@ -17,12 +17,13 @@ html {
 *,
 *::before,
 *::after {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: "Fira Code", monospace;
+  font-family: "Fira Code", "JetBrains Mono", Monaco, Consolas, "Ubuntu Mono", monospace;
   font-size: var(--font-size);
   font-weight: 400;
   line-height: var(--line-height);
@@ -35,31 +36,34 @@ body {
   -webkit-overflow-scrolling: touch;
   text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: calc(var(--font-size) * 1.45);
+  letter-spacing: 0;
+}
+
+h2 {
+  font-size: calc(var(--font-size) * 1.35);
+  letter-spacing: 0;
+}
+
+h3 {
+  font-size: calc(var(--font-size) * 1.15);
+  letter-spacing: 0;
+}
+
+h4, 
+h5, 
+h6 {
+  font-size: calc(var(--font-size) * 1);
+  letter-spacing: 0;
 }
 
 ::placeholder {
   color: color-mix(in srgb var(--foreground) 50%, black);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: calc(var(--font-size) * 1.1);
-  letter-spacing: 0.04em;
-}
-
-h1,
-h2 {
-  text-transform: uppercase;
-}
-
-h1 {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: calc(var(--font-size) * 0.2);
 }
 
 h1,
@@ -75,7 +79,7 @@ img,
 figure,
 video,
 table {
-  margin: calc(var(--line-height) * 1.01) 0;
+  margin: 25px 0;
 }
 
 /* Base link styles */
@@ -101,6 +105,11 @@ figure figcaption a {
 /* Hover states - general first, then specifics */
 a:hover {
   background-color: color-mix(in srgb, var(--accent) 15%, transparent);
+}
+
+a:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 2px;
 }
 
 footer a:hover {
@@ -140,6 +149,11 @@ button:hover {
   background-color: color-mix(in srgb, var(--accent) 15%, transparent);
 }
 
+button:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 2px;
+}
+
 img {
   display: block;
   max-width: 75%;
@@ -172,24 +186,59 @@ ol li {
 
 code,
 kbd {
-  font-family: "Fira Code", monospace !important;
+  font-family: "Fira Code", 
+               "JetBrains Mono", 
+               Monaco, 
+               Consolas, 
+               "Ubuntu Mono", 
+               monospace !important;
   font-feature-settings: normal;
   background: color-mix(in srgb, var(--foreground) 5%, transparent);
-  color: var(--accent);
-  padding: 1px 6px;
+  color: color-mix(in srgb, var(--foreground) 5%, var(--accent));
+  padding: 0 6px;
   margin: 0 2px;
-  font-size: 0.95rem;
+  font-size: 0.95em;
 }
 
-kbd,
+code {
+  border: 1px solid color-mix(in srgb, var(--foreground) 25%, transparent);
+}
+
+kbd {
+  border-top: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  border-left: 1px solid var(--accent);
+  border-right: 1px solid var(--accent);
+  border-bottom: 4px solid var(--accent);
+  border-radius: 4px;
+}
+
 code code {
   background: transparent;
   padding: 0;
   margin: 0;
 }
 
-strong {
-  color: var(--accent);
+pre {
+  tab-size: 4;
+  background: color-mix(in srgb, var(--foreground) 5%, transparent) !important;
+  color: color-mix(in srgb, var(--foreground) 5%, var(--accent));
+  padding: 20px 10px;
+  font-size: 0.95em !important;
+  overflow: auto;
+  border-radius: var(--radius);
+  border: 1px solid color-mix(in srgb, var(--foreground) 25%, transparent);
+}
+
+pre code {
+  background: none !important;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  border: none;
+}
+
+sup {
+  line-height: 0;
 }
 
 .header-img {
@@ -213,14 +262,14 @@ figure {
 
 figure img {
   margin-bottom: 0;
-  border: 1px solid var(--accent);
+  border: 1px solid color-mix(in srgb, var(--foreground) 25%, transparent);
 }
 
 figure figcaption {
   background: var(--accent);
   color: var(--background);
   text-align: center;
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: normal;
   margin-top: -8px;
   border-radius: 0 0 var(--radius) var(--radius);
@@ -261,26 +310,6 @@ footer {
   margin-top: 1rem;
 }
 
-.blog-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.blog-title img {
-  width: 5%;
-  height: auto;
-  border: none;
-}
-
-.blog-title img:first-of-type {
-  margin-right: 1rem;
-}
-
-.blog-title img:last-of-type {
-  margin-left: 1rem;
-}
-
 .button-container,
 .title-container {
   display: flex;
@@ -296,9 +325,9 @@ footer {
   font-style: italic;
 }
 
-@media (width >= 721px) {
+@media (width >= 841px) {
   .page {
-    width: 720px;
+    width: 840px;
     margin: 0 auto;
   }
 }
@@ -309,6 +338,6 @@ footer {
   }
 
   to {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 }
