@@ -19,7 +19,7 @@ tags:
 **Continuous Deployment/Delivery (CD)**: One step further than CI, code that passes all tests is automatically deployed to production, without manual intervention.
 
 - Significantly harder to pull off, typically only used on basic, stateless systems.
- - Web servers and APIs, which are easy to rollback if something breaks
+    - Web servers and APIs, which are easy to rollback if something breaks
 - The more complex and stateful the system is, the harder it is to make it truly rely on CD.
 
 Most developer platforms have their own CI/CD solutions (GitHub Actions), but many people also self-host these solutions themselves (a topic for another time).
@@ -87,8 +87,8 @@ For demonstration purposes, I have created a sample repository that contains a s
 1. On GitHub, navigate to **your fork** of the sample repository.
 2. Above the list of files, click the green **Code** button
 3. Copy the URL for the repository.
-	1.  If you have an SSH key associated with your GitHub account already, use the SSH option.
-	2. Otherwise, use the HTTPS option.
+    1.  If you have an SSH key associated with your GitHub account already, use the SSH option.
+    2. Otherwise, use the HTTPS option.
 4. Open your terminal, and type the following:
 
 ```bash
@@ -109,10 +109,10 @@ touch static.yml
 These commands do the following:
 - Change to the `gh-actions-example` directory, where we downloaded our files from GitHub.
 - Within that directory, make a directory named `workflows` that is inside another directory named `.github`, and change to that directory.
-	- This directory is where GitHub looks for your workflow files.
+    - This directory is where GitHub looks for your workflow files.
 - Create a new file named `static.yml`
-	- This is your workflow file. It can be named anything you want, but make sure to leave the `.yml` extension!
-  
+    - This is your workflow file. It can be named anything you want, but make sure to leave the `.yml` extension!
+
 ### Open your workflow in a text editor
 
 Let's say, for instance, we want our groundbreaking, revolutionary "Hello World" app to conform to standard PEP 8 formatting. How would we accomplish this?
@@ -160,13 +160,13 @@ This seems like a lot. What is this specifically doing?
 
 - First, you're setting the *events* that will trigger this workflow. In this case, this workflow triggers when you push to the main branch of the repository, or if someone submits a pull request.
 - Then, you're defining a job, and in that job, you're doing a couple of things:
-	- First, you're saying that you want this *runner* to use Ubuntu.
-	- Second, you're defining your *steps*:
-		- Set up Python 3.10.
-		- Install the dependencies we need.
-		- Run the linter.
-		- Run the tests.
-	
+    - First, you're saying that you want this *runner* to use Ubuntu.
+    - Second, you're defining your *steps*:
+        - Set up Python 3.10.
+		    - Install the dependencies we need.
+		    - Run the linter.
+		    - Run the tests.
+
 Notice that these are things that you would ordinarily do manually (I hope) if you're deploying or pushing code to a repository.
 
 By taking the extra five or so minutes to define a workflow first, you've saved yourself (or in an enterprise setting, your team) an insane amount of time in the future, especially as the project gets larger.
@@ -184,7 +184,7 @@ This post is only really scratching the surface on what's possible with CI/CD, s
 where to look to improve your knowledge.
 
 - Take a look at some workflows on GitHub!
-  - Here's [my workflow for Heehoposting](https://github.com/hackisonjd/heehoposting/blob/main/.github/workflows/hugo.yml)
+    - Here's [my workflow for Heehoposting](https://github.com/hackisonjd/heehoposting/blob/main/.github/workflows/hugo.yml)
 - Evaluate some of the GitHub workflow templates and see if they work in your project.
 
 ![Make sure to check the Actions link on the top bar of your repo!](images/001.png)
