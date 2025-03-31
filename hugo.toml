@@ -13,8 +13,6 @@ pagination.pagerSize = 5
 [params]
   contentTypeName = "blog"
 
-  readingTime = true
-
   dateFormat = "2006 January 02"
 
 [markup]
