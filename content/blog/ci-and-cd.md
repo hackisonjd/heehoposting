@@ -166,9 +166,9 @@ This seems like a lot. What is this specifically doing?
   - First, you're saying that you want this *runner* to use Ubuntu.
   - Second, you're defining your *steps*:
     - Set up Python 3.10.
-		- Install the dependencies we need.
-		- Run the linter.
-		- Run the tests.
+        - Install the dependencies we need.
+        - Run the linter.
+        - Run the tests.
 
 Notice that these are things that you would ordinarily do manually (I hope) if you're deploying or pushing code to a repository.
 
