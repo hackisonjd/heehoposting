@@ -2,7 +2,7 @@
 title: A Beginner's Guide to CI and CD
 date: 2025-03-07
 draft: true
-author: Jackson Darman
+author: hackisonjd
 tags:
   - uug-talks
 ---
