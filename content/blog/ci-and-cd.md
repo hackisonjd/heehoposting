@@ -1,7 +1,9 @@
 ---
 title: A Beginner's Guide to CI and CD
 date: 2025-04-02
-author: hackisonjd
+author: 
+  - hackisonjd^[https://github.com/hackisonjd]
+  - Tabulate^[https://github.com/TabulateJarl8]
 summary: This beginner's guide introduces Continous Integration and Deployment (CI/CD), and explains how these automated workflows can streamline software development.
 tags:
   - uug-talks
@@ -180,6 +182,21 @@ This is where CI/CD shines!
 
 - Change specific arguments in the `.yaml` file. What's changed? How does this affect the testing behavior?
 - Add a bunch of random whitespaces, or add some code that doesn't work. Does the integration fail?
+
+## More Examples of CI/CD Pipelines
+
+### Simple
+
+- [Run python unit tests/codecov on multiple different python versions](https://github.com/TabulateJarl8/randfacts/blob/master/.github/workflows/main.yml)
+- [Automatically build a jar in a Java Maven Project](https://github.com/TabulateJarl8/modpackSwitcher/blob/master/.github/workflows/main.yml)
+
+### Complex
+
+- [Build/deploy multiarch snaps, and other various Linux/Windows packages](https://gitlab.com/ImaginaryInfinity/squiid-calculator/squiid/-/blob/trunk/.gitlab-ci.yml)
+  - [Full run view](https://gitlab.com/ImaginaryInfinity/squiid-calculator/squiid/-/pipelines/1711964739)
+- [Build, test, and deploy multi-language bindings for many different platforms](https://gitlab.com/ImaginaryInfinity/squiid-calculator/squiid-bindings/-/blob/trunk/.gitlab-ci.yml?ref_type=heads)
+  - [Full run view](https://gitlab.com/ImaginaryInfinity/squiid-calculator/squiid-bindings/-/pipelines/1712101626)
+- [Huge GitLab Pipeline (click "Show dependencies")](https://gitlab.com/gitlab-org/gitlab/-/pipelines/1745834196)
 
 ## What's next?
 
