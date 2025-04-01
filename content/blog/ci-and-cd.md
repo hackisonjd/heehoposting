@@ -1,6 +1,6 @@
 ---
 title: A Beginner's Guide to CI and CD
-date: 2025-04-01
+date: 2025-04-02
 author: 
   - hackisonjd, Tabulate
 
