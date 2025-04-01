@@ -196,7 +196,6 @@ This is where CI/CD shines!
   - [Full run view](https://gitlab.com/ImaginaryInfinity/squiid-calculator/squiid-bindings/-/pipelines/1712101626)
 - [Huge GitLab Pipeline (click "Show dependencies")](https://gitlab.com/gitlab-org/gitlab/-/pipelines/1745834196)
 
-
 ## What's next?
 
 This post is only really scratching the surface on what's possible with CI/CD, so here are some recommendations on
