@@ -1,7 +1,9 @@
 ---
 title: A Beginner's Guide to CI and CD
 date: 2025-04-02
-author: hackisonjd
+author: 
+  - hackisonjd^[https://github.com/hackisonjd]
+  - Tabulate^[https://github.com/TabulateJarl8]
 summary: This beginner's guide introduces Continous Integration and Deployment (CI/CD), and explains how these automated workflows can streamline software development.
 tags:
   - uug-talks
