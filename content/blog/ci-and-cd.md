@@ -4,7 +4,7 @@ date: 2025-04-02
 author: 
   - hackisonjd, Tabulate
 
-summary: This beginner's guide introduces Continous Integration and Deployment (CI/CD), and explains how these automated workflows can streamline software development.
+summary: This beginner's guide introduces Continuous Integration and Deployment (CI/CD), and explains how these automated workflows can streamline software development.
 tags:
   - uug-talks
   - automation
@@ -124,7 +124,7 @@ These commands do the following:
 
 Let's say, for instance, we want our groundbreaking, revolutionary "Hello World" app to conform to standard PEP 8 formatting. How would we accomplish this?
 
-```yml
+```yaml
 name: Hello World application
 
 on:
