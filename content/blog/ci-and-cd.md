@@ -207,4 +207,4 @@ where to look to improve your knowledge.
   - Here's [my workflow for Heehoposting](https://github.com/hackisonjd/heehoposting/blob/main/.github/workflows/hugo.yml).
 - Evaluate some of the GitHub workflow templates and see if they work in your project.
 
-![Make sure to check the Actions link on the top bar of your repo!](images/001.png)
+![Make sure to check the Actions link on the top bar of your repo!](/blog/images/001.png)
