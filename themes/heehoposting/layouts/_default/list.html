@@ -6,22 +6,30 @@
     {{ end}}
 
     {{ if eq .RelPermalink "/blog/" }}
-    <ul class="post-list"></ul>
+    <!-- Blog logic -->
+    <h1>Blog Articles</h1>
+
+    <!-- List of tags, make the list run horizontally and with no decorators -->
+    <h2>Topics</h2>
+    <ul class="tagcloud">
+        {{ range $key, $value := .Site.Taxonomies.tags }}
+            <li>
+                <a href="{{ (urlize (printf "tags/%s/" $key)) | absLangURL }}">#{{ $key }}</a>
+            </li>
+        {{ end }}
+    </ul>
+
+    <!-- List of posts -->
+    <h2>Articles</h2>
+    <ul class="post-list">
         {{ range .Paginator.Pages }}
         <li>
+            <span class="post-date">{{ .Date.Format "2006 January 02" }} - </span>
             <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            <span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
-            {{ if .Params.tags }}
-                <span class="post-tags">
-                    {{ range .Params.tags }}
-                        #<a href="{{ (urlize (printf "tags/%s/" .)) | absLangURL }}">{{- . -}}</a>&nbsp;
-                    {{ end }}
-                </span>
-            {{ end }}
         </li>
         {{ end }}
     </ul>
-    {{ end}}
+    {{ end }}
 
     {{ partial "pagination.html" .}}
 {{ end }}

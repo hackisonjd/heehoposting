@@ -325,6 +325,18 @@ footer {
   font-style: italic;
 }
 
+.tagcloud {
+  padding: 0;
+  text-align: center;
+  margin: 0 auto;
+  border: dashed 1px color-mix(in srgb, var(--foreground) 25%, transparent);
+  list-style: none;
+}
+
+.tagcloud li {
+  display: inline-block;
+}
+
 @media (width >= 841px) {
   .page {
     width: 840px;
