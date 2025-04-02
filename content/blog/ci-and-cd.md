@@ -7,6 +7,8 @@ author:
 summary: This beginner's guide introduces Continous Integration and Deployment (CI/CD), and explains how these automated workflows can streamline software development.
 tags:
   - uug-talks
+  - automation
+  - guides
 ---
 
 *Disclaimer: This blog post was written as supplemental material for the James Madison University's Unix Users Group. Just pretend you were there!*
