@@ -108,7 +108,7 @@ After you've completed these steps, you should have the repository in the locati
 
 ```bash
 cd gh-actions-example
-mkdir .github/workflows && cd .github/workflows
+mkdir -p .github/workflows && cd .github/workflows
 touch static.yml
 ```
 
