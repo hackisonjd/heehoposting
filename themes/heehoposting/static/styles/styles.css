@@ -335,6 +335,7 @@ footer {
 
 .tagcloud li {
   display: inline-block;
+  margin: 0.5rem;
 }
 
 @media (width >= 841px) {
