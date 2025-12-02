@@ -1,12 +1,15 @@
 ---
 title: A Beginner's Guide to CI/CD
 description: ""
-date: null
-author: ""
+date: 2025-04-02T21:00:00.000Z
 preview: ""
 draft: false
-tags: []
-categories: []
+tags:
+    - automation
+    - uug-talks
+    - guides
+categories:
+    - Programming
 ---
 *Disclaimer: This blog post was written as supplemental material for the James Madison University's Unix Users Group. Just pretend you were there!*
 

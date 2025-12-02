@@ -1,5 +1,6 @@
 ---
 title: Meet the Author
+date: 2025-12-02T12:11:10.697Z
 ---
 Hello! I am a 24-year-old with a bachelor's degree in Computer Science from James Madison University. My main areas of interest are cybersecurity, systems administration, and all things Linux. Outside of the realm of computing, I love tabletop games, my slightly overweight cat, and a nice cold glass of Dr Pepper.
 
