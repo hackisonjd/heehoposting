@@ -11,44 +11,58 @@ tags:
 categories:
     - Programming
 ---
-*Disclaimer: This blog post was written as supplemental material for the James Madison University's Unix Users Group. Just pretend you were there!*
+*Disclaimer: This blog post was written as supplemental material for the James Madison
+University's Unix Users Group. Just pretend you were there!*
 
 ## What is CI/CD?
 
-**Continuous Integration (CI)**: Automate the process of merging new code into a shared repository, early and often.
+**Continuous Integration (CI)**: Automate the process of merging new code into a
+shared repository, early and often.
 
-- Each commit triggers an automated workflow on a server that runs a series of tasks to ensure new code doesn't break the codebase.
+- Each commit triggers an automated workflow on a server that runs a series of
+tasks to ensure new code doesn't break the codebase.
 - A natural evolution of test-driven development.
 
-**Continuous Deployment/Delivery (CD)**: One step further than CI, code that passes all tests is automatically deployed to production, without manual intervention.
+**Continuous Deployment/Delivery (CD)**: One step further than CI, code that
+passes all tests is automatically deployed to production, without manual intervention.
 
 - Significantly harder to pull off, typically only used on basic, stateless systems.
   - Web servers and APIs, which are easy to rollback if something breaks
-- The more complex and stateful the system is, the harder it is to make it truly rely on CD.
+- The more complex and stateful the system is, the harder it is to make it truly
+rely on CD.
 
-Most developer platforms have their own CI/CD solutions (GitHub Actions), but many people also self-host these solutions themselves (a topic for another time).
+Most developer platforms have their own CI/CD solutions (GitHub Actions), but
+many people also self-host these solutions themselves (a topic for another time).
 
 ## The Theory
 
-The idea is to automate the testing and delivery of software from the initial code commit all the way through to deployment.
+The idea is to automate the testing and delivery of software from the initial
+code commit all the way through to deployment.
 
 ### Why do this?
 
-- Limits amount of human intervention required to build a project. (Automate once, be "lazy" forever)
-- Allows for multiple people, with drastically different roles, to deploy code without conflicts ("merge hell")
+- Limits amount of human intervention required to build a project. (Automate once,
+be "lazy" forever)
+- Allows for multiple people, with drastically different roles, to deploy code
+without conflicts ("merge hell")
 - For large corporations, time is money!
 
 **Is it worth it?** It depends!
 
 ## The Agenda
 
-You will be setting up a sample GitHub repository, and setting up a GitHub Actions configuration file to ensure that code will be checked and, if it passes the tests, deploy a new build automatically.
+You will be setting up a sample GitHub repository, and setting up a GitHub Actions
+configuration file to ensure that code will be checked and, if it passes the tests,
+deploy a new build automatically.
 
 **Terminology to understand:**
 
-- **Events**: Trigger for a workflow. "When new code is pushed to this repository, run the below job."
-- **Jobs**: A series of *steps* and *actions* that only run once triggered by an event (typically linters and testing software).
-- **Runners**: An isolated environment (container) that runs our code throughout the CI/CD process.
+- **Events**: Trigger for a workflow. "When new code is pushed to this repository,
+run the below job."
+- **Jobs**: A series of *steps* and *actions* that only run once triggered by an
+event (typically linters and testing software).
+- **Runners**: An isolated environment (container) that runs our code throughout
+the CI/CD process.
 
 Here is a simple example to demonstrate these concepts in action!
 
@@ -78,11 +92,13 @@ jobs:
 
 ## Getting Started
 
-*Note:* In order to follow along, you must install Git and have an active GitHub account.
+*Note:* In order to follow along, you must install Git and have an active GitHub
+account.
 
 ### Fork my sample repository
 
-For demonstration purposes, I have created a sample repository that contains a simple Python "Hello World" file.
+For demonstration purposes, I have created a sample repository that contains a
+simple Python "Hello World" file.
 
 1. Navigate to [the sample repository](https://github.com/hackisonjd/gh-actions-example).
 2. In the top-right corner of the page, click **Fork**. Leave everything as default.
@@ -93,7 +109,8 @@ For demonstration purposes, I have created a sample repository that contains a s
 1. On GitHub, navigate to **your fork** of the sample repository.
 2. Above the list of files, click the green **Code** button
 3. Copy the URL for the repository.
-    1. If you have an SSH key associated with your GitHub account already, use the SSH option.
+    1. If you have an SSH key associated with your GitHub account already, use
+    the SSH option.
     2. Otherwise, use the HTTPS option.
 4. Open your terminal, and type the following:
 
@@ -102,7 +119,8 @@ cd ~/Documents # Or use whatever directory you want!
 git clone <PASTE YOUR LINK HERE>
 ```
 
-After you've completed these steps, you should have the repository in the location you specified.
+After you've completed these steps, you should have the repository in the location
+you specified.
 
 ### Create your first workflow
 
@@ -114,15 +132,19 @@ touch static.yml
 
 These commands do the following:
 
-- Change to the `gh-actions-example` directory, where we downloaded our files from GitHub.
-- Within that directory, make a directory named `workflows` that is inside another directory named `.github`, and change to that directory.
+- Change to the `gh-actions-example` directory, where we downloaded our files
+from GitHub.
+- Within that directory, make a directory named `workflows` that is inside another
+directory named `.github`, and change to that directory.
   - This directory is where GitHub looks for your workflow files.
 - Create a new file named `static.yml`
-  - This is your workflow file. It can be named anything you want, but make sure to leave the `.yml` extension!
+  - This is your workflow file. It can be named anything you want, but make sure
+  to leave the `.yml` extension!
 
 ### Open your workflow in a text editor
 
-Let's say, for instance, we want our groundbreaking, revolutionary "Hello World" app to conform to standard PEP 8 formatting. How would we accomplish this?
+Let's say, for instance, we want our groundbreaking, revolutionary "Hello World"
+app to conform to standard PEP 8 formatting. How would we accomplish this?
 
 ```yaml
 name: Hello World application
@@ -165,7 +187,9 @@ jobs:
 
 This seems like a lot. What is this specifically doing?
 
-- First, you're setting the *events* that will trigger this workflow. In this case, this workflow triggers when you push to the main branch of the repository, or if someone submits a pull request.
+- First, you're setting the *events* that will trigger this workflow. In this
+case, this workflow triggers when you push to the main branch of the repository,
+or if someone submits a pull request.
 - Then, you're defining a job, and in that job, you're doing a couple of things:
   - First, you're saying that you want this *runner* to use Ubuntu.
   - Second, you're defining your *steps*:
@@ -174,16 +198,21 @@ This seems like a lot. What is this specifically doing?
     - Run the linter.
     - Run the tests.
 
-Notice that these are things that you would ordinarily do manually (I hope) if you're deploying or pushing code to a repository.
+Notice that these are things that you would ordinarily do manually (I hope) if
+you're deploying or pushing code to a repository.
 
-By taking the extra five or so minutes to define a workflow first, you've saved yourself (or in an enterprise setting, your team) an insane amount of time in the future, especially as the project gets larger.
+By taking the extra five or so minutes to define a workflow first, you've saved
+yourself (or in an enterprise setting, your team) an insane amount of time in the
+future, especially as the project gets larger.
 
 This is where CI/CD shines!
 
 ### Play around with the workflow
 
-- Change specific arguments in the `.yaml` file. What's changed? How does this affect the testing behavior?
-- Add a bunch of random whitespaces, or add some code that doesn't work. Does the integration fail?
+- Change specific arguments in the `.yaml` file. What's changed? How does this
+affect the testing behavior?
+- Add a bunch of random whitespaces, or add some code that doesn't work. Does
+the integration fail?
 
 ## More Examples of CI/CD Pipelines
 
@@ -202,7 +231,8 @@ This is where CI/CD shines!
 
 ## What's next?
 
-This post is only really scratching the surface on what's possible with CI/CD, so here are some recommendations on
+This post is only really scratching the surface on what's possible with CI/CD, so
+here are some recommendations on
 where to look to improve your knowledge.
 
 - Take a look at some workflows on GitHub!
