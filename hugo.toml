@@ -2,14 +2,10 @@ baseurl = "https://heehoposting.xyz/"
 title = "Heehoposting"
 theme = "whiteplain"
 languageCode = "en"
-# Disqus shortname
-disqusShortname = "Heehoposting"
-# google analytics tracking id
-googleAnalytics = "Toracking ID"
 
 [caches]
   [caches.images]
-    dir = ':cacheDir/images"
+    dir = ":cacheDir/images"
 
 [params]
   # whether to use CDN or local file for fontawesome
