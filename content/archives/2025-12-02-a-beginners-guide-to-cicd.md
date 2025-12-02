@@ -224,6 +224,8 @@ the integration fail?
 
 ### Complex
 
+*cred: [Tabulate](https://github.com/TabulateJarl8)*
+
 - [Build/deploy multiarch snaps, and other various Linux/Windows packages](https://gitlab.com/ImaginaryInfinity/squiid-calculator/squiid/-/blob/trunk/.gitlab-ci.yml)
   - [Full run view](https://gitlab.com/ImaginaryInfinity/squiid-calculator/squiid/-/pipelines/1711964739)
 - [Build, test, and deploy multi-language bindings for many different platforms](https://gitlab.com/ImaginaryInfinity/squiid-calculator/squiid-bindings/-/blob/trunk/.gitlab-ci.yml?ref_type=heads)
