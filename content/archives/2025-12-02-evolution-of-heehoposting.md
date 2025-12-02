@@ -42,6 +42,6 @@ However, this came with a consequence. As my personal life got busier and busier
 
 I updated the font from Times New Roman to Cantarell. There wasn't really any rhyme or reason for it. I daily drove Fedora Linux at the time and I liked the font well enough, so up onto the site it went. I also changed the look of the site from a retro terminal-esque look to a more standard, kind of boring dark-gray background.
 
-I was also beginning to learn about cryptography around this time, and I had taken an interest in it. So much so, that I learned how GPG worked and uploaded my public key so that people could send me encrypted mail. I think to this day, only one person actually did it, but it was the coolest thing ever.
+I was also beginning to learn about cryptography around this time, and I had taken an interest in it. So much so, that I learned how GPG worked and uploaded my public key so that people could send me encrypted mail. I think to this day, only one person actually did it, but it was the coolest thing ever!
 
 ## Chapter 2: 
