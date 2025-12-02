@@ -9,7 +9,7 @@ googleAnalytics = "Toracking ID"
 
 [caches]
   [caches.images]
-    dir = ':cacheDir/images"
+    dir = ":cacheDir/images"
 
 [params]
   # whether to use CDN or local file for fontawesome
