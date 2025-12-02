@@ -1,16 +1,16 @@
 ---
 title: Evolution of Heehoposting
 description: A brief overview of the evolution of this site, and where I plan to take it next.
-date: null
+date: 2025-12-02T12:57:14.758Z
 author: ""
 preview: ""
-draft: false
+draft: true
 tags:
     - self-hosting
     - web development
     - projects
 categories:
-    - Programming
+    - Meta
 ---
 
 Well... we've come a long way, haven't we?
@@ -32,7 +32,7 @@ Looking back at the WayBack Machine archive today is an... interesting experienc
 
 [Here's the link to the Wayback Machine archive](https://web.archive.org/web/20220118175437/http://www.heehoposting.xyz/). I'm warning you though, it will burn your retinas. To be honest, I look back at it four years later and cringe a little bit, but I guess that's owed to the fact that my life has significantly changed since I've built it. This was a very important first step for me, but nowhere close to the end of the story.
 
-![alt text](/image.png)
+<img style="display: block; margin-left: auto; margin-right: auto;">![alt text](/heeho-1.png)</img>
 
 ### Chapter 1.5: Heehoposting Redux
 
