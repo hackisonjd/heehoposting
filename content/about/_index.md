@@ -6,7 +6,7 @@ Hello! I am a 24-year-old with a bachelor's degree in Computer Science from Jame
 # Getting In Touch
 My preferred way of communicating is through e-mail. If you need to get in contact with me, sending me a quick email is typically the best way to do it.
 
-All of my emails are signed with my {{< download url="/jackson.gpg" >}}GPG key{{< /download>}}. Feel free to encrypt your mail as well if you're so inclined.
+All of my emails are signed with my {{< download url="/jackson.gpg" >}}GPG key{{< /download>}}. Feel free to encrypt your mail if you're so inclined.
 * Fingerprint: ```2391 9C52 22BD 6606 09B8 19D7 DCAA 4BFD D1A9 132D```
 
 # What I Use
