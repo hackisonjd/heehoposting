@@ -217,14 +217,14 @@ the integration fail?
 
 ## More Examples of CI/CD Pipelines
 
+*Section written by [Tabulate](https://github.com/TabulateJarl8)*
+
 ### Simple
 
 - [Run python unit tests/codecov on multiple different python versions](https://github.com/TabulateJarl8/randfacts/blob/master/.github/workflows/main.yml)
 - [Automatically build a jar in a Java Maven Project](https://github.com/TabulateJarl8/modpackSwitcher/blob/master/.github/workflows/main.yml)
 
 ### Complex
-
-*cred: [Tabulate](https://github.com/TabulateJarl8)*
 
 - [Build/deploy multiarch snaps, and other various Linux/Windows packages](https://gitlab.com/ImaginaryInfinity/squiid-calculator/squiid/-/blob/trunk/.gitlab-ci.yml)
   - [Full run view](https://gitlab.com/ImaginaryInfinity/squiid-calculator/squiid/-/pipelines/1711964739)
