@@ -11,7 +11,7 @@ languageCode = "en"
   # whether to use CDN or local file for fontawesome
   #useCDN = false
   # whether to include external sharing scripts and icons for twitter, facebook and co.
-  #showShareIcons = false
+  showShareIcons = false
   # Date format
   #dateFormat = "January 2, 2006"
 
