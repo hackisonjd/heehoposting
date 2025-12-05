@@ -21,5 +21,6 @@ tmp
 
 # Other development folders
 .frontmatter
+frontmatter.json
 .vscode
 
