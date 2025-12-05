@@ -11,9 +11,15 @@ hugo_stats.json
 *.log
 .DS_Store
 Thumbs.db
+dist
+tmp
 
 # Generated files by hugo
 /public/
 /resources/_gen/
 .hugo_build.lock
+
+# Other development folders
+.frontmatter
+.vscode
 
