@@ -56,10 +56,6 @@
     {
       "title": "about",
       "path": "[[workspace]]/content/about"
-    },
-    {
-      "title": "archives",
-      "path": "[[workspace]]/content/archives"
     }
   ]
 }

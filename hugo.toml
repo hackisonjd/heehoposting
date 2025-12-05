@@ -52,10 +52,3 @@ languageCode = "en"
   identifier = "about"
   url = "/about/"
   weight = 4
-
-# Footer Menu
-[[menu.footer]]
-  name = "About"
-  weight = 1
-  identifier = "about"
-  url = "/about/"
